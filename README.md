@@ -1,80 +1,55 @@
-# Bill Splitter (Java, JavaFX, FXML)
+# Bill Splitter Application --- Python & Tkinter
 
-This project is a simple **Bill Splitter** application built using
-**Java**, **JavaFX**, and **FXML**.\
-It allows users to input the number of people, total bill amount, and
-specify how many individuals are vegetarian or non‑vegetarian.\
-The app calculates and displays the cost per person accordingly.
+This repository contains a simple, user-friendly **Bill Splitter
+Application** built entirely in **Python**, featuring both a
+**Tkinter-based GUI** and a **non-GUI console version**. The project is
+designed to help users split bills accurately while practicing core
+Python logic and interface development skills.
 
-------------------------------------------------------------------------
+## 📌 Features
 
-## 🚀 Features
+-   GUI built with **Tkinter**
+-   Console (non-GUI) version included
+-   Tax calculation support
+-   Vegetarian vs. non-vegetarian bill splitting
+-   Fair distribution of meat-item costs
+-   Input validation & error handling
+-   Clean layout with padding and spacing
 
--   JavaFX-based GUI for clean and interactive usage\
--   Split bill between:
-    -   Vegetarian users\
-    -   Non‑vegetarian users\
--   Calculates:
-    -   Per-person cost\
-    -   Total number of vegetarians and non‑vegetarians\
--   Responsive layout ensuring all text fits inside the window\
--   Separate version available **without GUI** (CLI-based)
+## 🧮 How It Works
 
-------------------------------------------------------------------------
+1.  User enters subtotal (before tax)
+2.  User enters tax percentage
+3.  User enters number of people
+4.  App asks if there are vegetarians
+5.  If yes, user enters meat item total
+6.  Meat costs are split among non-vegetarians only
+7.  Remaining costs (including tax) are split equally
 
-## 📁 Project Structure
+## 🎯 Purpose of This Project
 
-    /BillSplitter
-    │── /src
-    │    ├── Main.java
-    │    ├── Controller.java
-    │    ├── bill_splitter.fxml
-    │── README.md
-    │── BillSplitterCLI.java  (non‑GUI version)
+This project is great for beginners wanting to practice: - Python input
+handling - Conditional logic - Arithmetic operations - Tkinter interface
+development - Error handling - Real-world problem solving
 
-------------------------------------------------------------------------
+## 📚 Official Documentation Sources
 
-## 🛠️ Requirements
+-   Python Tkinter: https://docs.python.org/3/library/tkinter.html
+-   Python Input/Output:
+    https://docs.python.org/3/tutorial/inputoutput.html
+-   Python Control Flow:
+    https://docs.python.org/3/tutorial/controlflow.html
 
--   Java 17 or higher\
--   JavaFX SDK\
--   Any IDE (IntelliJ IDEA recommended)
+## 🚀 Getting Started
 
-------------------------------------------------------------------------
+Run the GUI version:
 
-## ▶️ How to Run (GUI Version)
+    python bill_splitter_gui.py
 
-1.  Install JavaFX SDK\
-2.  Add JavaFX library paths to your IDE VM arguments\
-3.  Run:
+Run the console version:
 
-```{=html}
-<!-- -->
-```
-    Main.java
+    python bill_splitter_console.py
 
-------------------------------------------------------------------------
+## 🤝 Contributions
 
-## ▶️ How to Run the CLI Version (Non‑GUI)
-
-Simply compile and run:
-
-    javac BillSplitterCLI.java
-    java BillSplitterCLI
-
-------------------------------------------------------------------------
-
-## 📌 Notes
-
-This is a beginner-friendly project demonstrating: - Java OOP\
-- JavaFX UI development\
-- Event handling\
-- Input validation
-
-Feel free to modify and enhance the application!
-
-------------------------------------------------------------------------
-
-## 📜 License
-
-This project is free to use for personal and educational purposes.
+Feel free to fork the repo and submit improvements!
